@@ -25,25 +25,38 @@
             color: black;
             text-decoration: none;
         }
-        ol{
+        #grid ol{
             border-right: 1px solid gray;
             width: 100px;
             margin: 0;
             padding: 20px;
+            padding-left: 33px;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+
+        }
+        #grid #article{
+            padding-left: 25px;
         }
     </style>
 </head>
 <body>
     <h1><a href="">WEB</a></h1>
-    <ol>
-        <li><a href="">HTML</a></li>
-        <li><a href="">CSS</a></li>
-        <li><a href="">JavaScript</a></li>
-    </ol>
-    <h2>CSS</h2>
-    <p>
-        Cascading Style Sheets (CSS) is a style sheet language used for
-        describing the presentation of a document written in a markup language
-    </p>
+    <div id="grid">
+        <ol>
+            <li><a href="">HTML</a></li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">JavaScript</a></li>
+        </ol>
+        <div id="article">
+            <h2>CSS</h2>
+            <p>
+                Cascading Style Sheets (CSS) is a style sheet language used for
+                describing the presentation of a document written in a markup language
+            </p>
+        </div>
+    </div>
 </body>
 </html>
